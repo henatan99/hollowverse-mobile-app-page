@@ -1,0 +1,12 @@
+.app_bar {
+    background-color: black;
+    width: 100%;
+}
+
+.app_bar_section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+}

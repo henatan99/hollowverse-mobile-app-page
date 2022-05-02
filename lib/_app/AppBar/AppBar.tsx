@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+// import styles from '../../../styles/Home.module.scss'
+import styles from './AppBar.module.scss';
 
 export const AppBar = () => {
   return (
-    <nav style={{ backgroundColor: '#F9EBEA' }}>
-      <section>
+    <nav className={styles.app_bar}>
+      <section className={styles.app_bar_section}>
         <div>
           <Link passHref href="/">
             <a>

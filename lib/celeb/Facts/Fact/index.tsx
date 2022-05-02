@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { useCelebContext } from '~/lib/components/StaticPropsContextProvider';
 import { Fact as TFact } from '~/lib/components/types';
+import styles from './Fact.module.scss';
 
 export const Fact: React.FC<{ value: TFact }> = ({ value }) => {
   const {
@@ -9,7 +10,7 @@ export const Fact: React.FC<{ value: TFact }> = ({ value }) => {
   } = useCelebContext();
 
   return (
-    <div>
+    <div className={styles.fact}>
       <div>
         <p>{value.date}</p>
       </div>

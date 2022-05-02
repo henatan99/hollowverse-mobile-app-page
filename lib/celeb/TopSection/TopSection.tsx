@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { sanityImage } from '~/lib/components/sanityio';
 import { useCelebContext } from '~/lib/components/StaticPropsContextProvider';
+import styles from './TopSection.module.scss';
 
 export const TopSection = () => {
   const context = useCelebContext();
@@ -9,7 +10,7 @@ export const TopSection = () => {
   const picture = context.celeb.picture || context.placeholderImage;
 
   return (
-    <div style={{ backgroundColor: '#FEF9E7' }}>
+    <div style={{ backgroundColor: '#FEF9E7' }} className={styles.top_section}>
       <section>
         <header>
           <div>

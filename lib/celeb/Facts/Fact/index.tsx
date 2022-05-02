@@ -12,18 +12,18 @@ export const Fact: React.FC<{ value: TFact }> = ({ value }) => {
   return (
     <div className={styles.fact}>
       <div>
-        <p>{value.date}</p>
+        <p className={styles.date}>{value.date}</p>
       </div>
 
       <div>
         {(value.type === 'quote' && (
           <div>
-            <p>
+            <p className={styles.context}>
               {value.context}, {name} said
             </p>
 
             <blockquote>
-              <p>{value.quote}</p>
+              <p className={styles.quote}>{value.quote}</p>
             </blockquote>
           </div>
         )) ||
@@ -34,7 +34,7 @@ export const Fact: React.FC<{ value: TFact }> = ({ value }) => {
           ))}
       </div>
 
-      <div>
+      <div className={styles.tags}>
         {value.tags.map((t) => {
           return (
             <p key={t.tag.name}>
@@ -45,7 +45,7 @@ export const Fact: React.FC<{ value: TFact }> = ({ value }) => {
         })}
       </div>
 
-      <div>
+      <div className={styles.links}>
         <Link href={value.source}>Source</Link>
         <Link href={value.forumLink}>Forum link</Link>
       </div>

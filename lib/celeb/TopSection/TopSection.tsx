@@ -10,7 +10,7 @@ export const TopSection = () => {
   const picture = context.celeb.picture || context.placeholderImage;
 
   return (
-    <div style={{ backgroundColor: '#FEF9E7' }} className={styles.top_section}>
+    <div className={styles.top_section}>
       <section>
         <header>
           <div>

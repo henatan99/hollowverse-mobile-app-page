@@ -1,5 +1,6 @@
 .app_bar {
     width: 100%;
+    background: linear-gradient(to bottom, black , #e3dbdb);
 }
 
 .app_bar_section {
@@ -7,5 +8,9 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.search {
     padding: 0.5rem;
 }

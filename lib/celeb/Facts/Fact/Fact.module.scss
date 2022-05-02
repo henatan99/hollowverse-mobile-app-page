@@ -8,7 +8,7 @@
 .date {
     width: fit-content;
     border: 0.5px solid navajowhite;
-    padding-right: 0.5rem;
+    padding: 0.5rem;
     border-radius: 5px;
     color: #6c757d;
 }
@@ -34,4 +34,8 @@
 .links {
     text-align: end;
     font-size: 14px;
+}
+
+.links a{
+    padding: 0.5rem;
 }

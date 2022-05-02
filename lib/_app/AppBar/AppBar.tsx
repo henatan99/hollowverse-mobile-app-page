@@ -25,7 +25,7 @@ export const AppBar = () => {
         <div>
           {/* Search input */}
           <div>
-            <input placeholder="Search for a celebrity" type="search" />
+            <input placeholder="Search for a celebrity" type="search" className={styles.search}/>
           </div>
         </div>
       </section>

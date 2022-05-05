@@ -7,7 +7,7 @@ import { TopSection } from '~/lib/celeb/TopSection/TopSection';
 
 export const Celeb = (p: CelebPageProps) => {
   return (
-    <main>
+    <main style={{maxWidth: 1024}}>
       <PageHead />
 
       <TopSection />

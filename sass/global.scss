@@ -15,4 +15,7 @@ body {
   color: $forground-color;
   width: 100vw;
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

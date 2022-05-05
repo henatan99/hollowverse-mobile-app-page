@@ -1,26 +1,21 @@
 import React from 'react';
 import { useCelebContext } from '~/lib/components/StaticPropsContextProvider';
 import { Fact } from '~/lib/celeb/Facts/Fact';
-import styles from './Facts.module.scss';
 
 export const Facts = () => {
   const context = useCelebContext();
   const { groups, topics } = context.celeb.facts!;
 
   return (
-    <div className={styles.facts}>
+    <div>
       {topics.map((topic, i) => {
         const factGroup = groups[topic];
 
         return (
-          <div key={`${topic}-${i}`} className={styles.facts_group}>
+          <div key={`${topic}-${i}`}>
             {factGroup.map((fact, innerI) => {
               return (
-                <div
-                  key={`${topic}-${i}-${innerI}`}
-                  // style={{ backgroundColor: '#F4ECF7' }}
-                  className={styles.fact_wrapper}
-                >
+                <div key={`${topic}-${i}-${innerI}`}>
                   <Fact value={fact} />
                 </div>
               );

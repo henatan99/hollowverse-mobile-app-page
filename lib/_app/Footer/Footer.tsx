@@ -11,20 +11,19 @@ export const Footer = () => {
         alt="Hollowverse"
         src="/images/letter-logo.png"
       />
-      <div className={styles.footer_info}>
-        <p>
-          Hollowverse is about the important <br />
-          people and their beliefs.
-        </p>
 
-        <p>
-          Email us at{' '}
-          <a href="mailto:hollowverse@hollowverse.com">
-            hollowverse@hollowverse.com
-          </a>
-          .
-        </p>
-      </div>
+      <p className={styles.footerDesc}>
+        Hollowverse is about the important <br />
+        people and their beliefs.
+      </p>
+
+      <p className={styles.footerContactUs}>
+        Email us at{' '}
+        <a href="mailto:hollowverse@hollowverse.com">
+          hollowverse@hollowverse.com
+        </a>
+        .
+      </p>
     </footer>
   );
 };

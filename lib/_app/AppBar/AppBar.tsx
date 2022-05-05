@@ -1,14 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-// import styles from '../../../styles/Home.module.scss'
-import styles from './AppBar.module.scss';
+import styles from './AppBar.module.scss'
 
 export const AppBar = () => {
   return (
-    <nav className={styles.app_bar}>
-      <section className={styles.app_bar_section}>
-        <div>
+    <nav className={styles.appBar}>
+      <section className={styles.appBarItems}>
+        <div className={styles.logo}>
           <Link passHref href="/">
             <a>
               <Image
@@ -25,7 +24,7 @@ export const AppBar = () => {
         <div>
           {/* Search input */}
           <div>
-            <input placeholder="Search for a celebrity" type="search" className={styles.search}/>
+            <input placeholder="Search for a celebrity" type="search" className={styles.searchInput}/>             
           </div>
         </div>
       </section>

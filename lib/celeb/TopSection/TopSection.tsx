@@ -10,10 +10,10 @@ export const TopSection = () => {
   const picture = context.celeb.picture || context.placeholderImage;
 
   return (
-    <div className={styles.top_section}>
-      <section>
-        <header>
-          <div>
+    <div className={styles.container}>
+      <section className={styles.headerItems}>
+        <header className={styles.header}>
+          <div className={styles.imgContainer}>
             <Image
               blurDataURL={picture.metadata.lqip}
               placeholder="blur"
@@ -22,10 +22,11 @@ export const TopSection = () => {
               height={250}
               priority
               alt={context.celeb.name}
+              className={styles.img}
             />
           </div>
 
-          <h1>
+          <h1 className={styles.headerText}>
             <span>Religion, politics, and ideas of</span>
             <br /> <span>{context.celeb.name}</span>
           </h1>
